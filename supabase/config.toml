@@ -1,0 +1,30 @@
+
+# This is a Supabase config file
+
+project_id = "nklyzlsraydlftzfjrod"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage"]
+
+[db]
+port = 54322
+
+[studio]
+enabled = true
+port = 54323
+
+[inbucket]
+enabled = true
+port = 54324
+
+[storage]
+enabled = true
+
+[functions]
+  [functions.delete-user]
+  verify_jwt = true
+  
+  [functions.send-email]
+  verify_jwt = false
